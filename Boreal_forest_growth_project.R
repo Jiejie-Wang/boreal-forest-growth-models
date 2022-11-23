@@ -13,7 +13,7 @@ summary(tree_proj)
 # make projection for each tree of each target species
 
 
-#  balsamfir projection--------------------
+#  balsamfir projection
 balsam_proj=tree_proj[tree_proj$SpeciesFIA==12,]
 
 
@@ -29,7 +29,7 @@ balsam_data_proj=cbind(balsam_proj, balsam_predict_base_1)
 names(balsam_data_proj)[names(balsam_data_proj)=="V1"]="Project_base_1"
 
 
-# predicton on 2050s RCP4.5-------------------------
+# predicton on 2050s RCP4.5
 balsam_50s_RCP45=balsam_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat", "Max_ST_50_45","Min_WT_50_45","FFP_50_45","MSP_50_45","PAS_50_45","CO2_50_45")]
 
 colnames(balsam_50s_RCP45)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -42,7 +42,7 @@ names(balsam_data_proj)[names(balsam_data_proj)=="V1"]="Project_50s_RCP45_1"
 
 
 
-# predicton on 2050s RCP8.5-------------------------
+# predicton on 2050s RCP8.5
 balsam_50s_RCP85=balsam_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat","Max_ST_50_85","Min_WT_50_85","FFP_50_85","MSP_50_85","PAS_50_85","CO2_50_85")]
 
 colnames(balsam_50s_RCP85)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -68,7 +68,7 @@ balsam_data_proj_PlotSum_ha$Species=12
 
 
 
-#  blackspruce projection--------------------
+#  blackspruce projection
 black_proj=tree_proj[tree_proj$SpeciesFIA==95,]
 
 
@@ -83,7 +83,7 @@ black_data_proj=cbind(black_proj, black_predict_base_1)
 names(black_data_proj)[names(black_data_proj)=="V1"]="Project_base_1"
 
 
-# predicton on 2050s RCP4.5-------------------------
+# predicton on 2050s RCP4.5
 black_50s_RCP45=black_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat", "Max_ST_50_45","Min_WT_50_45","FFP_50_45","MSP_50_45","PAS_50_45","CO2_50_45")]
 
 colnames(black_50s_RCP45)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -96,7 +96,7 @@ names(black_data_proj)[names(black_data_proj)=="V1"]="Project_50s_RCP45_1"
 
 
 
-# predicton on 2050s RCP8.5-------------------------
+# predicton on 2050s RCP8.5
 black_50s_RCP85=black_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat","Max_ST_50_85","Min_WT_50_85","FFP_50_85","MSP_50_85","PAS_50_85","CO2_50_85")]
 
 colnames(black_50s_RCP85)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -122,7 +122,7 @@ black_data_proj_PlotSum_ha$Species=95
 
 
 
-#  whitespruce projection--------------------
+#  whitespruce projection
 white_proj=tree_proj[tree_proj$SpeciesFIA==94,]
 
 
@@ -137,7 +137,7 @@ white_data_proj=cbind(white_proj, white_predict_base_1)
 names(white_data_proj)[names(white_data_proj)=="V1"]="Project_base_1"
 
 
-# predicton on 2050s RCP4.5-------------------------
+# predicton on 2050s RCP4.5
 white_50s_RCP45=white_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat", "Max_ST_50_45","Min_WT_50_45","FFP_50_45","MSP_50_45","PAS_50_45","CO2_50_45")]
 
 colnames(white_50s_RCP45)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -150,7 +150,7 @@ names(white_data_proj)[names(white_data_proj)=="V1"]="Project_50s_RCP45_1"
 
 
 
-# predicton on 2050s RCP8.5-------------------------
+# predicton on 2050s RCP8.5
 white_50s_RCP85=white_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat","Max_ST_50_85","Min_WT_50_85","FFP_50_85","MSP_50_85","PAS_50_85","CO2_50_85")]
 
 colnames(white_50s_RCP85)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -176,7 +176,7 @@ white_data_proj_PlotSum_ha$Species=94
 
 
 
-#  whitebirch projection--------------------
+#  whitebirch projection
 birch_proj=tree_proj[tree_proj$SpeciesFIA==375,]
 
 
@@ -191,7 +191,7 @@ birch_data_proj=cbind(birch_proj, birch_predict_base_1)
 names(birch_data_proj)[names(birch_data_proj)=="V1"]="Project_base_1"
 
 
-# predicton on 2050s RCP4.5-------------------------
+# predicton on 2050s RCP4.5
 birch_50s_RCP45=birch_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat", "Max_ST_50_45","Min_WT_50_45","FFP_50_45","MSP_50_45","PAS_50_45","CO2_50_45")]
 
 colnames(birch_50s_RCP45)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -204,7 +204,7 @@ names(birch_data_proj)[names(birch_data_proj)=="V1"]="Project_50s_RCP45_1"
 
 
 
-# predicton on 2050s RCP8.5-------------------------
+# predicton on 2050s RCP8.5
 birch_50s_RCP85=birch_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat","Max_ST_50_85","Min_WT_50_85","FFP_50_85","MSP_50_85","PAS_50_85","CO2_50_85")]
 
 colnames(birch_50s_RCP85)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -231,7 +231,7 @@ birch_data_proj_PlotSum_ha$Species=375
 
 
 
-#  jack pine projection--------------------
+#  jack pine projection
 jack_proj=tree_proj[tree_proj$SpeciesFIA==105,]
 
 
@@ -246,7 +246,7 @@ jack_data_proj=cbind(jack_proj, jack_predict_base_1)
 names(jack_data_proj)[names(jack_data_proj)=="V1"]="Project_base_1"
 
 
-# predicton on 2050s RCP4.5-------------------------
+# predicton on 2050s RCP4.5
 jack_50s_RCP45=jack_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat", "Max_ST_50_45","Min_WT_50_45","FFP_50_45","MSP_50_45","PAS_50_45","CO2_50_45")]
 
 colnames(jack_50s_RCP45)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -259,7 +259,7 @@ names(jack_data_proj)[names(jack_data_proj)=="V1"]="Project_50s_RCP45_1"
 
 
 
-# predicton on 2050s RCP8.5-------------------------
+# predicton on 2050s RCP8.5
 jack_50s_RCP85=jack_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat","Max_ST_50_85","Min_WT_50_85","FFP_50_85","MSP_50_85","PAS_50_85","CO2_50_85")]
 
 colnames(jack_50s_RCP85)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -286,7 +286,7 @@ jack_data_proj_PlotSum_ha$Species=105
 
 
 
-#  aspen projection--------------------
+#  aspen projection
 aspen_proj=tree_proj[tree_proj$SpeciesFIA==746,]
 
 
@@ -301,7 +301,7 @@ aspen_data_proj=cbind(aspen_proj, aspen_predict_base_1)
 names(aspen_data_proj)[names(aspen_data_proj)=="V1"]="Project_base_1"
 
 
-# predicton on 2050s RCP4.5-------------------------
+# predicton on 2050s RCP4.5
 aspen_50s_RCP45=aspen_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat", "Max_ST_50_45","Min_WT_50_45","FFP_50_45","MSP_50_45","PAS_50_45","CO2_50_45")]
 
 colnames(aspen_50s_RCP45)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -314,7 +314,7 @@ names(aspen_data_proj)[names(aspen_data_proj)=="V1"]="Project_50s_RCP45_1"
 
 
 
-# predicton on 2050s RCP8.5-------------------------
+# predicton on 2050s RCP8.5
 aspen_50s_RCP85=aspen_proj[,c("BA9","TreeBA","Moist","Slope","Aspect_Cat","Max_ST_50_85","Min_WT_50_85","FFP_50_85","MSP_50_85","PAS_50_85","CO2_50_85")]
 
 colnames(aspen_50s_RCP85)[6:11]=c( "Max_ST", "Min_WT", "FFP", "MSP", "PAS","CO2")
@@ -370,3 +370,7 @@ boreal <-  spTransform(boreal,crs(Plot_growth))
 
 #subset to boreal zone 
 Plot_growth_boreal <- treeSpecies_Plots_Proj[boreal, ] 
+
+
+# End of Script
+#******************************************************************************
