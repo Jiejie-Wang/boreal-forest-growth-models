@@ -3,6 +3,8 @@
 #          for climate growth modifiers (thermal transfer functions, TTFs)  
 #
 # Author: Anthony Taylor				Last Update: March 17, 2022
+
+#jiejie wang
 #
 #******************************************************************************
 
